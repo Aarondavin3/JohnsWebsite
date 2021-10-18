@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - JohnsWebsite</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/lightbox.css" />
+
+    
+
+</head>
+<body>
+    <div class="container">
+        <div id="menu" class="menu">
+            <a id="logo" asp-area="" asp-controller="Home" asp-action="Index">JOHN DAVIN</a>
+            <ul class="menu-nav" style="max-height: calc(100%-130px);">
+                <li class="item top_level">
+                    <a asp-area="" asp-controller="Home" asp-action="Index">SELECTED WORK</a>
+                    <div class="dropdown-menu">
+                        <a asp-area="" asp-controller="Home" asp-action="Index" tabindex="-1" class="dropdown-item">RECENT WORK</a>
+                    </div>
+                </li>
+                <li class="item top_level">
+                    <a asp-area="" asp-controller="Home" asp-action="About">ABOUT</a>
+                </li>
+                <li class="item top_level">
+                    <a asp-area="" asp-controller="Home" asp-action="Contact">CONTACT</a>
+                </li>
+
+            </ul>
+            <div id="social" class="social">
+                <ul class="social-menu">
+                    <li>
+                        <a href="https://www.instagram.com/davincreativeimages/" target="_blank" rel="noopener noreferrer">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:johndavin@gmail.com">
+                            <i class="fa fa-envelope-o"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        
+
+
+           @* <footer id="footerfix">
+                <div class="container-fluid text-center">
+                    &copy; 2021 - JohnsWebsite - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                </div>
+            </footer>*@
+        </div>
+
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        <script src="~/js/site.js"></script>
+
+        <script type="text/javascript">
+            $('body').on('contextmenu', 'img', function (e) {
+                return false;
+            });
+        </script>
+
+        @RenderSection("Scripts", required: false)
+</body>
+</html>

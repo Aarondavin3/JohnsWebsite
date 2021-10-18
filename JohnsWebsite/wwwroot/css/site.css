@@ -1,0 +1,199 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+html, body {
+    height: 100%;
+}
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #2e2e2e;
+}
+
+    a:hover {
+        color:cadetblue;
+    }
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+/*html {
+  position: relative;
+  min-height: 100%;
+}*/
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    font-family: 'Courier New', monospace;
+    line-height: 1.2;
+}
+
+.pb-3 {
+    position: relative;
+    top: 6.5em;
+    left:10em;
+}
+
+#carouselExampleControls {
+    max-height: 80vh;
+}
+
+.carousel-item {
+    
+}
+
+    .carousel-item img {
+        width: auto;
+        height: 225px;
+        max-height: 225px;
+        pointer-events: none;
+    }
+    /*.footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        white-space: nowrap;
+        line-height: 60px;*/ /* Vertically center the text there */
+    /*}*/
+
+.menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    padding: 100px 0 0;
+    width: 160px;
+/*    z-index: 9;*/
+}
+.menu-nav {
+    bottom: 0;
+    margin: 0;
+    padding: 25px 0 25px;
+}
+.menu-nav li {
+        display: block;
+        list-style: none;
+        font-size: 13px;
+        transition: font-size ease-in-out 130ms;
+        transition-property: font-size;
+        transition-duration: 130ms;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0s;
+}
+    .menu-nav a {
+        display: inline-block;
+        padding: 5px 5px 5px 3px;
+        position: relative;
+        outline: 0;
+        line-height: 1.4;
+        font-size: 16px;
+        text-decoration:none
+    }
+
+   
+.container {
+    width: 100%;
+    padding: 0 5.5%;
+    position:absolute;
+}
+
+#logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none
+}
+.social-menu li {
+    list-style: none;
+    display:inline;
+    padding-right: 4px;
+}
+.social-menu {
+    bottom: 0;
+    margin: 0;
+    padding:0px 0 25px;
+}
+
+
+
+#footerfix {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}
+
+h1 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+p {
+    text-align:center;
+}
+
+#contact{
+    text-align: center;
+}
+
+#contact li {
+    list-style: none;
+}
+
+#contact li i {
+    color:cadetblue;
+}
+
+#about a {
+    text-decoration:underline;
+}
+
+
+
